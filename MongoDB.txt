@@ -1,0 +1,37 @@
+NOSQL
+
+{
+namee: 'Spongebob',
+age: 30,
+gpa: 3.2,
+fullTime: false,
+},
+{
+name: 'Patrick',
+age: 38,
+gpa: 1.5,
+fullTime: false,
+},
+{
+name: 'Sandy',
+age: 27,
+gpa: 4,
+fullTime: true,
+}
+
+Document - group of field value pairs to represent an object
+Collection - group one or more documents.
+Database - Group of one or more collections
+
+using MongoDB shell
+- show dbs
+- use 'the database name'
+
+db.createCollection("pass the collection name ")
+db.dropDatabase()
+
+//document 
+db.students.insertOne({name:"Spongebob", age:30, gpa:4.5})
+
+//to return all document in a collection
+db.students.find()
