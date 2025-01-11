@@ -35,3 +35,52 @@ db.students.insertOne({name:"Spongebob", age:30, gpa:4.5})
 
 //to return all document in a collection
 db.students.find()
+
+School> db.Students.insertMany[{},{},
+School> db.Students.insertMany([{name:"Cyrus", age:20, gpa:30},{name: School> db.Students.insertMany([{name:"Cyrus", age:20, gpa:30},{name:School> db.Students.insertMany([{name:"Cyrus", age:20, gpa:30},{name: "Grace", age:19, gpa:34},{name: "Ian", age:21, gpa:35}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67823deae1a2a443d24eeb87'),
+    '1': ObjectId('67823deae1a2a443d24eeb88'),
+    '2': ObjectId('67823deae1a2a443d24eeb89')
+  }
+}
+School> db.Students.find()
+[
+  {
+
+School> db.Students.insertOne({name:"Larry", age:32, gpa:2.8, fullTime: false, registerDate: new Date(), graduationDate: null, courses: ["Biology", "Chemistry", "Calculus"], address: {street:"123 Fake St.", city: "Bikini Bottom", zip: 12345}})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67824d89e1a2a443d24eeb8b')
+}
+School> show dbs
+School  120.00 KiB
+admin    40.00 KiB
+config  108.00 KiB
+local    72.00 KiB
+School> db.Students.find()
+[
+  {
+    _id: ObjectId('67823deae1a2a443d24eeb87'),
+    name: 'Cyrus',
+    age: 20,
+    gpa: 30
+  },
+  {
+    _id: ObjectId('67823deae1a2a443d24eeb88'),
+    name: 'Grace',
+    age: 19,
+    gpa: 34
+  },
+  {
+    _id: ObjectId('67823deae1a2a443d24eeb89'),
+    name: 'Ian',
+    age: 21,
+    gpa: 35
+  },
+  { _id: ObjectId('67824c3ae1a2a443d24eeb8a') },
+  {
+    _id: ObjectId('67824d89e1a2a443d24eeb8b'),
+}
